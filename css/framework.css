@@ -18,6 +18,7 @@
 
 [class*="col-"] {
     float: left;
+    position: relative;
 }
 
 /* COLUMNS */

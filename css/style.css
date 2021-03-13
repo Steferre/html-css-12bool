@@ -2,16 +2,26 @@
 [class*="col-"] {
     border: 1px solid #000000;
     text-align: center;
-    padding: 100px 0; /*messo solo per evidenziare meglio le colonne*/
-    background-color: #FFC0CB; 
+    height: 100px; /*messa solo per evidenziare meglio le colonne*/
+    background-color: #FFC0CB;
+    vertical-align: middle; 
 }
 
 [class*="col-"].nested {
     background-color: #F07F80;
     border-color: #FFFFFF;
-    margin: -90px 0;
+    height: 90px;
 }
 
+[class*="col-"] > p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
 .card {
-    padding: 0 5px;
+    padding: 5px 5px;
 }
